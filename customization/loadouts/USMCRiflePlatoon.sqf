@@ -7,167 +7,115 @@
 
 #define package "USMCRiflePlatoon_"
 
-#define uniform \
-	["rhs_uniform_FROG01_d"] call FNC_AddItem; \
-	["tin_backpack_kitbag_tan"] call FNC_AddItem; \
-	["rhsusf_lwh_helmet_marpatd", "rhsusf_lwh_helmet_marpatd_ess", "rhsusf_lwh_helmet_marpatd_headset"] call FNC_AddItemRandom;
-	
-//["rhs_uniform_FROG01_wd"] call FNC_AddItem; Woodland Cammo
-//["rhsusf_lwh_helmet_marpatwd","rhsusf_lwh_helmet_marpatwd_ess","rhsusf_lwh_helmet_marpatwd_headset"] call FNC_AddItemRandom; Woodland Cammo
-		
-#define IFAK \
+#define clothes \
+	["rhs_uniform_FROG01_wd"] call FNC_AddItem; \
+	["rhsusf_mich_helmet_marpatwd","rhsusf_mich_helmet_marpatwd_headset","rhsusf_mich_helmet_marpatwd_alt","rhsusf_mich_helmet_marpatwd_alt_headset","rhsusf_mich_helmet_marpatwd_norotos","rhsusf_mich_helmet_marpatwd_norotos_headset","rhsusf_mich_helmet_marpatwd_norotos_arc","rhsusf_mich_helmet_marpatwd_norotos_arc_headset","rhsusf_lwh_helmet_marpatwd", "rhsusf_lwh_helmet_marpatwd_blk_ess", "rhsusf_lwh_helmet_marpatwd_headset_blk","rhsusf_lwh_helmet_marpatwd_headset","rhsusf_lwh_helmet_marpatwd_ess"] call FNC_AddItemRandom; \
+	["","G_Combat","G_Balaclava_blk","G_Bandanna_beast","G_Bandanna_blk","G_Lowprofile"] call FNC_AddItemRandom;
+	//["rhs_uniform_FROG01_d"] call FNC_AddItem; \
+	//["rhsusf_mich_helmet_marpatd","rhsusf_mich_helmet_marpatd_alt","rhsusf_mich_helmet_marpatd_alt_headset","rhsusf_mich_helmet_marpatd_headset","rhsusf_mich_helmet_marpatd_norotos","rhsusf_mich_helmet_marpatd_norotos_arc","rhsusf_mich_helmet_marpatd_norotos_arc_headset","rhsusf_mich_helmet_marpatd_norotos_headset","rhsusf_lwh_helmet_marpatd","rhsusf_lwh_helmet_marpatd_ess","rhsusf_lwh_helmet_marpatd_headset"] call FNC_AddItemRandom; \
+	//["","G_Combat","G_Balaclava_blk","G_Bandanna_beast","G_Bandanna_blk","G_Lowprofile"] call FNC_AddItemRandom;
+
+#define medical \
 	["ACE_fieldDressing", 6, "uniform"] call FNC_AddItem; \
-	["ACE_elasticBandage", 6, "uniform"] call FNC_AddItem; \
-	["ACE_packingBandage", 6, "uniform"] call FNC_AddItem; \
-	["ACE_quikclot", 6, "uniform"] call FNC_AddItem; \
 	["ACE_morphine", 1, "uniform"] call FNC_AddItem; \
 	["ACE_epinephrine", 1, "uniform"] call FNC_AddItem; \
 	["ACE_tourniquet", 1, "uniform"] call FNC_AddItem;
-	
-#define items \
-	["ACRE_PRC343", 1] call FNC_AddItem; \
+
+#define bits \
+	["tf_anprc152", 1] call FNC_AddItem; \
 	["ItemMap"] call FNC_AddItem; \
 	["ItemCompass"] call FNC_AddItem; \
 	["ItemWatch"] call FNC_AddItem; \
 	["ACE_MapTools"] call FNC_AddItem; \
 	["ACE_earplugs"] call FNC_AddItem;
-	
+
 case (package + "SL"): {
-	
-	["rhsusf_spc_squadleader"] call FNC_AddItem; //Vest
-	
-	uniform;
-	IFAK;
-	items;
-	
-	["ACE_Vector"] call FNC_AddItem;
-	
-	["ACRE_PRC152", 1] call FNC_AddItem; //Long range radio
-	
-	["rhs_mag_30Rnd_556x45_M855A1_Stanag", 11] call FNC_AddItem; //Magazines
-	["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", 2] call FNC_AddItem; //Tracer magazines
-	
-	["rhs_mag_an_m8hc", 2] call FNC_AddItem; //White smoke
-	["rhs_mag_m18_purple", 2] call FNC_AddItem; //Purple Smoke
-	["rhs_mag_m18_red", 2] call FNC_AddItem; //Red Smoke
-	["rhs_mag_m67", 2] call FNC_AddItem; //Frag grenade
-	
-	["rhs_weap_m4_carryhandle"] call FNC_AddItem; //Primary rifle
-	["rhsusf_acc_compm4"] call FNC_AddItem; //Red dot sight
-	
+
+	clothes;
+	medical;
+	bits;
+
+	  ["rhsusf_mag_15Rnd_9x19_JHP", 3, "uniform"] call FNC_AddItem;
+	  ["rhsusf_spc_squadleader"] call FNC_AddItem;
+	  ["rhs_mag_30Rnd_556x45_Mk318_Stanag", 6, "vest"] call FNC_AddItem;
+	  ["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", 2, "vest"] call FNC_AddItem;
+	  ["rhs_mag_M441_HE", 6, "vest"] call FNC_AddItem;
+	  ["rhs_mag_m714_White", 2, "vest"] call FNC_AddItem;
+	  ["rhs_mag_m67", 2, "vest"] call FNC_AddItem;
+	  ["SmokeShell", 1, "vest"] call FNC_AddItem;
+	  ["tf_rt1523g_black"] call FNC_AddItem;
+
+	  ["rhs_weap_hk416d10_m320"] call FNC_AddItem;
+	  ["rhsusf_acc_SFMB556"] call FNC_AddItem;
+	  ["rhsusf_acc_anpeq15side_bk"] call FNC_AddItem;
+	  ["optic_MRCO"] call FNC_AddItem;
+	  ["rhsusf_weap_m9"] call FNC_AddItem;
+	  ["ACE_VectorDay"] call FNC_AddItem;
+
+	  ["rhsusf_ANPVS_14"] call FNC_AddItem;
+
+
+
 };
 
 case (package + "TL"): {
-	
-	["rhsusf_spc_teamleader"] call FNC_AddItem;  //Vest
-	
-	uniform;
-	IFAK;
-	items;
-	
-	["rhs_mag_30Rnd_556x45_M855A1_Stanag", 11] call FNC_AddItem; //Magazines
-	["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", 2] call FNC_AddItem; //Tracer magazines
-	
-	["rhs_mag_an_m8hc", 2] call FNC_AddItem; //White smoke
-	["rhs_mag_m67", 2] call FNC_AddItem; //Frag grenade
-	
-	
-	["1Rnd_HE_Grenade_shell", 12] call FNC_AddItem; //Frag Grenade  (m203)
-	["1Rnd_SmokeRed_Grenade_shell", 6] call FNC_AddItem; //Red Smoke  (m203)
-	
-	["rhs_mag_m18_purple", 2] call FNC_AddItem; //Purple Smoke
-	["rhs_mag_m18_red", 2] call FNC_AddItem; //Red Smoke
-	
-	["rhs_weap_m4_m203S"] call FNC_AddItem; //Primary rifle
-	["rhsusf_acc_compm4"] call FNC_AddItem; //Red dot sight
-	
+
+	clothes;
+	medical;
+	bits;
+
+	  ["rhsusf_mag_15Rnd_9x19_JHP", 3, "uniform"] call FNC_AddItem;
+	  ["rhs_mag_30Rnd_556x45_Mk318_Stanag", 1, "uniform"] call FNC_AddItem;
+	  ["rhsusf_spc_teamleader"] call FNC_AddItem;
+	  ["rhs_mag_M441_HE", 6, "vest"] call FNC_AddItem;
+	  ["rhs_mag_m714_White", 2, "vest"] call FNC_AddItem;
+	  ["rhs_mag_m67", 2, "vest"] call FNC_AddItem;
+	  ["SmokeShell", 1, "vest"] call FNC_AddItem;
+	  ["rhs_mag_30Rnd_556x45_Mk318_Stanag", 2, "vest"] call FNC_AddItem;
+
+	  ["rhs_weap_hk416d10_LMT"] call FNC_AddItem;
+	  ["rhsusf_acc_SFMB556"] call FNC_AddItem;
+	  ["rhsusf_acc_anpeq15side_bk"] call FNC_AddItem;
+	  ["optic_MRCO"] call FNC_AddItem;
+	  ["rhsusf_weap_m9"] call FNC_AddItem;
+	  ["ACE_VectorDay"] call FNC_AddItem;
+	  ["rhsusf_ANPVS_14"] call FNC_AddItem;
+
+
 };
 
 case (package + "AR"): {
-	
-	["rhsusf_spc_mg"] call FNC_AddItem;  //Vest
-	
-	uniform;
-	IFAK;
-	items;
-	
-	["rhs_mag_an_m8hc", 2] call FNC_AddItem; //White smoke
-	["rhs_mag_m67", 2] call FNC_AddItem; //Frag grenade
-	
-	["rhs_200rnd_556x45_M_SAW", 3] call FNC_AddItem; //Magazines
-	
-	["rhs_weap_m249_pip_usmc"] call FNC_AddItem; //Primary rifle
-	["rhsusf_acc_compm4"] call FNC_AddItem; //Red dot sight
-	["ACE_SpareBarrel", 1] call FNC_AddItem;  // Spare Barrel
-	
+
+
+
+};
+
+case (package + "AAR"): {
+
+
+
 };
 
 case (package + "RFAT"): {
-	
-	["rhsusf_spc_rifleman"] call FNC_AddItem;  //Vest
-	
-	uniform;
-	IFAK;
-	items;
-	
-	["rhs_mag_an_m8hc", 2] call FNC_AddItem; //White smoke
-	["rhs_mag_m67", 2] call FNC_AddItem; //Frag grenade
-	
-	["rhs_mag_30Rnd_556x45_M855A1_Stanag", 11] call FNC_AddItem; //Magazines
-	
-	["rhs_weap_m4_carryhandle"] call FNC_AddItem; //Primary rifle
-	["rhsusf_acc_compm4"] call FNC_AddItem; //Red dot sight
-	
-	["rhs_weap_M136_hedp"] call FNC_AddItem; //Anti tank launcher
-	
+
+
+
 };
 
 case (package + "RF"): {
-	
-	["rhsusf_spc_rifleman"] call FNC_AddItem;  //Vest
-	
-	uniform;
-	IFAK;
-	items;
-	
-	["rhs_mag_an_m8hc", 2] call FNC_AddItem; //White smoke
-	["rhs_mag_m67", 2] call FNC_AddItem; //Frag grenade
-	
-	["rhs_mag_30Rnd_556x45_M855A1_Stanag", 11] call FNC_AddItem; //Magazines
-	
-	["rhs_weap_m4_carryhandle"] call FNC_AddItem; //Primary rifle
-	["rhsusf_acc_compm4"] call FNC_AddItem; //Red dot sight
-	
-	["rhs_200rnd_556x45_M_SAW", 1] call FNC_AddItem; //Spare AR ammo
-	
+
+
+
+};
+
+case (package + "GL"): {
+
+
+
 };
 
 case (package + "MD"): {
-	
-	["rhsusf_spc_corpsman"] call FNC_AddItem;  //Vest
-	
-	uniform;
-	IFAK;
-	items;
-	
-	["rhs_mag_an_m8hc", 4] call FNC_AddItem; //White smoke
-	
-	["rhs_mag_30Rnd_556x45_M855A1_Stanag", 11] call FNC_AddItem; //Magazines
-	
-	["rhs_weap_m4_carryhandle"] call FNC_AddItem; //Primary rifle
-	["rhsusf_acc_compm4"] call FNC_AddItem; //Red dot sight
-	
-	//Extra Medic Supplies
-	["ACE_fieldDressing", 15] call FNC_AddItem;
-	["ACE_elasticBandage", 20] call FNC_AddItem;
-	["ACE_packingBandage", 20] call FNC_AddItem;
-	["ACE_quikclot", 15] call FNC_AddItem;
-	["ACE_atropine", 12] call FNC_AddItem;
-	["ACE_morphine", 8] call FNC_AddItem;
-	["ACE_epinephrine", 8] call FNC_AddItem;
-	["ACE_tourniquet", 5] call FNC_AddItem;
-	["ACE_salineIV_500", 1] call FNC_AddItem;
-	["ACE_surgicalKit", 3] call FNC_AddItem;
-	["ACE_personalAidKit", 3] call FNC_AddItem;
-	
-};	
+
+
+
+};

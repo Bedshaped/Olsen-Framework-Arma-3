@@ -9,8 +9,7 @@
 _unit call FNC_RemoveAllGear;
 
 switch (_type) do {
-	
+
 	#include "loadouts\USMCRiflePlatoon.sqf"
-	#include "loadouts\RURiflePlatoon.sqf"
-	
+
 };
