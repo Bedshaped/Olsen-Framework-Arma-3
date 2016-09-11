@@ -201,7 +201,7 @@ FNC_AddItemOrg = {
 				};
 			};
 
-			if (!_succes && _type in ["Map", "GPS", "Compass", "Watch", "NVGoggles"]) then {
+			if (!_succes && _type in ["Map", "GPS", "Compass", "Watch", "Radio", "NVGoggles"]) then {
 
 				if ([_unit, _type] call FNC_CanLinkItem) then {
 
