@@ -9,10 +9,10 @@
 #include "auto_track_assets\root.sqf"
 #include "disconnect_control\root.sqf"
 #include "EG_Spectator_Mode\root.sqf"
-#include "interact_menu_debug\root.sqf"
+//#include "interact_menu_debug\root.sqf"
 #include "jip\root.sqf"
-#include "start_on_safe\root.sqf"
-#include "start_with_earplugs\root.sqf"
+//#include "start_on_safe\root.sqf"
+//#include "start_with_earplugs\root.sqf"
 
 //Additional modules that can be enabled by removing the // please note that there might be settings to be tweaked inside the modules/module folder.
 
