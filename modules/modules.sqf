@@ -5,7 +5,7 @@
 
 //Enabled modules by default, disabled them by adding // in front.
 
-#include "anti_nd\root.sqf"
+//#include "anti_nd\root.sqf"
 #include "auto_track_assets\root.sqf"
 #include "disconnect_control\root.sqf"
 #include "EG_Spectator_Mode\root.sqf"
