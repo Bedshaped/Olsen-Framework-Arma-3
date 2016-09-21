@@ -17,14 +17,14 @@
 #define clothes \
 	["rhs_uniform_FROG01_wd"] call FNC_AddItem; \
 	["rhsusf_mich_helmet_marpatwd","rhsusf_mich_helmet_marpatwd_headset","rhsusf_mich_helmet_marpatwd_alt","rhsusf_mich_helmet_marpatwd_alt_headset","rhsusf_mich_helmet_marpatwd_norotos","rhsusf_mich_helmet_marpatwd_norotos_headset","rhsusf_mich_helmet_marpatwd_norotos_arc","rhsusf_mich_helmet_marpatwd_norotos_arc_headset","rhsusf_lwh_helmet_marpatwd", "rhsusf_lwh_helmet_marpatwd_blk_ess", "rhsusf_lwh_helmet_marpatwd_headset_blk","rhsusf_lwh_helmet_marpatwd_headset","rhsusf_lwh_helmet_marpatwd_ess"] call FNC_AddItemRandom; \
-	["","G_Combat","G_Balaclava_blk","G_Bandanna_beast","G_Bandanna_blk","G_Lowprofile"] call FNC_AddItemRandom;
+	["G_Combat","G_Balaclava_blk","G_Bandanna_beast","G_Bandanna_blk","G_Lowprofile"] call FNC_AddItemRandom;
 
 /*
 //MARPAT Desert
 #define clothes \
 	["rhs_uniform_FROG01_d"] call FNC_AddItem; \
 	["rhsusf_mich_helmet_marpatd","rhsusf_mich_helmet_marpatd_alt","rhsusf_mich_helmet_marpatd_alt_headset","rhsusf_mich_helmet_marpatd_headset","rhsusf_mich_helmet_marpatd_norotos","rhsusf_mich_helmet_marpatd_norotos_arc","rhsusf_mich_helmet_marpatd_norotos_arc_headset","rhsusf_mich_helmet_marpatd_norotos_headset","rhsusf_lwh_helmet_marpatd","rhsusf_lwh_helmet_marpatd_ess","rhsusf_lwh_helmet_marpatd_headset"] call FNC_AddItemRandom; \
-	["","G_Combat","G_Balaclava_blk","G_Bandanna_beast","G_Bandanna_blk","G_Lowprofile"] call FNC_AddItemRandom;
+	["G_Combat","G_Balaclava_blk","G_Bandanna_beast","G_Bandanna_blk","G_Lowprofile"] call FNC_AddItemRandom;
 	*/
 
 #define medical \
