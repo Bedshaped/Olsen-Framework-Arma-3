@@ -162,7 +162,7 @@ case (package + "LCPL"): {
 
 };
 
-//section GPMG
+//section GL
 case (package + "GP"): {
 
 	uniform_m;
