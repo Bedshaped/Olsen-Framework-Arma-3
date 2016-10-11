@@ -19,8 +19,8 @@
 	["UK3CB_BAF_H_Mk6_DPMT_A","UK3CB_BAF_H_Mk6_DPMT_B","UK3CB_BAF_H_Mk6_DPMT_C","UK3CB_BAF_H_Mk6_DPMT_D","UK3CB_BAF_H_Mk6_DPMT_E","UK3CB_BAF_H_Mk6_DPMT_F"] call FNC_AddItemRandom;
 
 //MTP uniform
-#define uniform_M \
-	["UK3CB_BAF_U_CombatUniform_MTP","UK3CB_BAF_U_CombatUniform_MTP_RM","UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve","UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve_RM","UK3CB_BAF_U_CombatUniform_MTP_TShirt","UK3CB_BAF_U_CombatUniform_MTP_TShirt_RM","UK3CB_BAF_U_JumperUniform_MTP","UK3CB_BAF_U_RolledUniform_MTP","UK3CB_BAF_U_Smock_DPMW_MTP","UK3CB_BAF_U_Smock_MTP","UK3CB_BAF_U_Smock_MTP_DDPM","UK3CB_BAF_U_Smock_MTP_DPMW"] \
+#define uniform_m \
+	["UK3CB_BAF_U_CombatUniform_MTP","UK3CB_BAF_U_CombatUniform_MTP_RM","UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve","UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve_RM","UK3CB_BAF_U_CombatUniform_MTP_TShirt","UK3CB_BAF_U_CombatUniform_MTP_TShirt_RM","UK3CB_BAF_U_JumperUniform_MTP","UK3CB_BAF_U_RolledUniform_MTP","UK3CB_BAF_U_Smock_DPMW_MTP","UK3CB_BAF_U_Smock_MTP","UK3CB_BAF_U_Smock_MTP_DDPM","UK3CB_BAF_U_Smock_MTP_DPMW"] call FNC_AddItemRandom; \
 	["UK3CB_BAF_H_Mk7_Camo_A","UK3CB_BAF_H_Mk7_Camo_B","UK3CB_BAF_H_Mk7_Camo_C","UK3CB_BAF_H_Mk7_Camo_CESS_A","UK3CB_BAF_H_Mk7_Camo_CESS_B","UK3CB_BAF_H_Mk7_Camo_CESS_C","UK3CB_BAF_H_Mk7_Camo_CESS_D","UK3CB_BAF_H_Mk7_Camo_D","UK3CB_BAF_H_Mk7_Camo_E","UK3CB_BAF_H_Mk7_Camo_ESS_A","UK3CB_BAF_H_Mk7_Camo_ESS_B","UK3CB_BAF_H_Mk7_Camo_ESS_C","UK3CB_BAF_H_Mk7_Camo_ESS_D","UK3CB_BAF_H_Mk7_Camo_F","UK3CB_BAF_H_Mk7_Net_A","UK3CB_BAF_H_Mk7_Net_B","UK3CB_BAF_H_Mk7_Net_C","UK3CB_BAF_H_Mk7_Net_CESS_A","UK3CB_BAF_H_Mk7_Net_CESS_B","UK3CB_BAF_H_Mk7_Net_CESS_C","UK3CB_BAF_H_Mk7_Net_CESS_D","UK3CB_BAF_H_Mk7_Net_D","UK3CB_BAF_H_Mk7_Net_ESS_A","UK3CB_BAF_H_Mk7_Net_ESS_B","UK3CB_BAF_H_Mk7_Net_ESS_C","UK3CB_BAF_H_Mk7_Net_ESS_D","UK3CB_BAF_H_Mk7_Scrim_A","UK3CB_BAF_H_Mk7_Scrim_B","UK3CB_BAF_H_Mk7_Scrim_C","UK3CB_BAF_H_Mk7_Scrim_D","UK3CB_BAF_H_Mk7_Scrim_E","UK3CB_BAF_H_Mk7_Scrim_ESS_A","UK3CB_BAF_H_Mk7_Scrim_ESS_B","UK3CB_BAF_H_Mk7_Scrim_ESS_C","UK3CB_BAF_H_Mk7_Scrim_F"] call FNC_AddItemRandom;
 
 //arctic uniform
@@ -89,7 +89,7 @@ case (package + "PSG"): {
 	["UK3CB_BAF_L85A2_UGL"] call FNC_AddItem;
 	["UK3CB_BAF_TA31F_Hornbill"] call FNC_AddItem;
 	["UK3CB_BAF_SFFH"] call FNC_AddItem;
-	["UK3CB_BAF_LLM_IR_Tan"] call FNC_AddItem;§
+	["UK3CB_BAF_LLM_IR_Tan"] call FNC_AddItem;
 	crossload;
 
 };
@@ -145,7 +145,7 @@ case (package + "CPL"): {
 	["UK3CB_BAF_L85A2_UGL"] call FNC_AddItem;
 	["UK3CB_BAF_TA31F_Hornbill"] call FNC_AddItem;
 	["UK3CB_BAF_SFFH"] call FNC_AddItem;
-	["UK3CB_BAF_LLM_IR_Tan"] call FNC_AddItem;§
+	["UK3CB_BAF_LLM_IR_Tan"] call FNC_AddItem;
 	crossload;
 
 };
