@@ -30,7 +30,7 @@
 	["UK3CB_BAF_H_Mk7_Win_A","UK3CB_BAF_H_Mk7_Win_ESS_A"] call FNC_AddItemRandom;
 
 //medical gear
-#define IFAK \
+#define ifak \
 	["ACE_fieldDressing", 6, "uniform"] call FNC_AddItem; \
 	["ACE_morphine", 2, "uniform"] call FNC_AddItem; \
 	["ACE_epinephrine", 1, "uniform"] call FNC_AddItem; \
@@ -219,7 +219,7 @@ case (package + "AR"): {
 	["UK3CB_BAF_V_Osprey_MG_A","UK3CB_BAF_V_Osprey_MG_B"] call FNC_AddItemRandom;
 	["UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D"] call FNC_AddItemRandom;
 	ifak;
-	items;	
+	items;
 	crossload;
 	["SmokeShell", 1, "uniform"] call FNC_AddItem;
 	["HandGrenade", 2, "uniform"] call FNC_AddItem;

@@ -30,7 +30,7 @@
 	["UK3CB_BAF_H_Mk7_Win_A","UK3CB_BAF_H_Mk7_Win_ESS_A"] call FNC_AddItemRandom;
 
 //medical gear
-#define IFAK \
+#define ifak \
 	["ACE_fieldDressing", 6, "uniform"] call FNC_AddItem; \
 	["ACE_elasticBandage", 6, "uniform"] call FNC_AddItem; \
 	["ACE_packingBandage", 6, "uniform"] call FNC_AddItem; \
