@@ -49,7 +49,7 @@
 #define ammofrag \
 	["SmokeShell", 1, "uniform"] call FNC_AddItem; \
 	["HandGrenade", 2, "uniform"] call FNC_AddItem; \
-	["UK3CB_BAF_556_30Rnd", 5, "vest"] call FNC_AddItem; \
+	["UK3CB_BAF_556_30Rnd", 6, "vest"] call FNC_AddItem; \
 	["UK3CB_BAF_556_30Rnd_T", 2, "vest"] call FNC_AddItem;
 
 #define L85 \
@@ -59,10 +59,10 @@
 	["UK3CB_BAF_LLM_IR_Tan"] call FNC_AddItem;
 
 #define crossload \
-	["UK3CB_BAF_556_30Rnd", 2, "backpack"] call FNC_AddItem; \
-	["UK3CB_BAF_762_20Rnd", 2, "backpack"] call FNC_AddItem; \
+	["UK3CB_BAF_556_30Rnd", 4, "backpack"] call FNC_AddItem; \
+	["UK3CB_BAF_762_L42A1_20Rnd", 2, "backpack"] call FNC_AddItem; \
 	["UK3CB_BAF_556_100Rnd", 1, "backpack"] call FNC_AddItem; \
-	["UK3CB_BAF_1Rnd_60mm_Mo_Shells", 1 , "backpack"] call FNC_AddItem;
+	["UK3CB_BAF_1Rnd_60mm_Mo_Shells", 4 , "backpack"] call FNC_AddItem;
 
 //note: MTP is standard as that has greatest variety of vests and backpacks.
 
@@ -158,7 +158,9 @@ case (package + "CPL"): {
 	["UK3CB_BAF_TA31F_Hornbill"] call FNC_AddItem;
 	["UK3CB_BAF_SFFH"] call FNC_AddItem;
 	["UK3CB_BAF_LLM_IR_Tan"] call FNC_AddItem;
-	crossload;
+	["UK3CB_BAF_556_30Rnd", 4, "backpack"] call FNC_AddItem;
+	["UK3CB_BAF_762_L42A1_20Rnd", 2, "backpack"] call FNC_AddItem;
+	["UK3CB_BAF_556_100Rnd", 1, "backpack"] call FNC_AddItem;
 
 };
 
@@ -177,7 +179,7 @@ case (package + "LCPL"): {
 };
 
 //section GL
-case (package + "GP"): {
+case (package + "GL"): {
 
 	uniform_m;
 	["UK3CB_BAF_V_Osprey_Grenadier_A","UK3CB_BAF_V_Osprey_Grenadier_B"] call FNC_AddItemRandom;
@@ -204,8 +206,8 @@ case (package + "DM"): {
 	crossload;
 	["SmokeShell", 1, "uniform"] call FNC_AddItem;
 	["HandGrenade", 2, "uniform"] call FNC_AddItem;
-	["UK3CB_BAF_762_20Rnd", 5, "vest"] call FNC_AddItem;
-	["UK3CB_BAF_762_20Rnd_T", 2, "vest"] call FNC_AddItem;
+	["UK3CB_BAF_762_L42A1_20Rnd", 5, "vest"] call FNC_AddItem;
+	["UK3CB_BAF_762_L42A1_20Rnd_T", 2, "vest"] call FNC_AddItem;
 	["UK3CB_BAF_L129A1_FGrip"] call FNC_AddItem;
 	["UK3CB_BAF_TA648"] call FNC_AddItem;
 	["UK3CB_BAF_LLM_IR_Black"] call FNC_AddItem;
@@ -229,3 +231,69 @@ case (package + "AR"): {
 	["UK3CB_BAF_TA31F"] call FNC_AddItem;
 
  };
+
+//weapons javelin
+ case (package + "AT"): {
+
+	uniform_m;
+ 	["UK3CB_BAF_V_Osprey_Rifleman_A","UK3CB_BAF_V_Osprey_Rifleman_B","UK3CB_BAF_V_Osprey_Rifleman_C","UK3CB_BAF_V_Osprey_Rifleman_D","UK3CB_BAF_V_Osprey_Rifleman_E","UK3CB_BAF_V_Osprey_Rifleman_F"] call FNC_AddItemRandom;
+ 	["UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D"] call FNC_AddItemRandom;
+ 	ifak;
+ 	items;
+ 	ammofrag;
+ 	L85;
+	["UK3CB_BAF_Javelin_Slung_Tube"] call FNC_AddItem;
+	["UK3CB_BAF_Javelin_CLU"] call FNC_AddItem;
+
+ };
+
+
+//weapons static MG
+  case (package + "ST"): {
+
+		uniform_m;
+	 	["UK3CB_BAF_V_Osprey_Rifleman_A","UK3CB_BAF_V_Osprey_Rifleman_B","UK3CB_BAF_V_Osprey_Rifleman_C","UK3CB_BAF_V_Osprey_Rifleman_D","UK3CB_BAF_V_Osprey_Rifleman_E","UK3CB_BAF_V_Osprey_Rifleman_F"] call FNC_AddItemRandom;
+	 	["UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D"] call FNC_AddItemRandom;
+	 	ifak;
+	 	items;
+	 	ammofrag;
+	 	L85;
+
+	};
+
+//weapons assistant javelin
+	case (package + "AAT"): {
+
+		uniform_m;
+	 	["UK3CB_BAF_V_Osprey_Rifleman_A","UK3CB_BAF_V_Osprey_Rifleman_B","UK3CB_BAF_V_Osprey_Rifleman_C","UK3CB_BAF_V_Osprey_Rifleman_D","UK3CB_BAF_V_Osprey_Rifleman_E","UK3CB_BAF_V_Osprey_Rifleman_F"] call FNC_AddItemRandom;
+	 	["UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D"] call FNC_AddItemRandom;
+	 	ifak;
+	 	items;
+	 	ammofrag;
+	 	L85;
+	};
+
+//weapons GPMG
+	case (package + "MG"): {
+
+		uniform_m;
+	 	["UK3CB_BAF_V_Osprey_Rifleman_A","UK3CB_BAF_V_Osprey_Rifleman_B","UK3CB_BAF_V_Osprey_Rifleman_C","UK3CB_BAF_V_Osprey_Rifleman_D","UK3CB_BAF_V_Osprey_Rifleman_E","UK3CB_BAF_V_Osprey_Rifleman_F"] call FNC_AddItemRandom;
+	 	["UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D"] call FNC_AddItemRandom;
+	 	ifak;
+	 	items;
+	 	ammofrag;
+
+	};
+
+
+//weapons assistant MG
+	case (package + "AMG"): {
+
+		uniform_m;
+	 	["UK3CB_BAF_V_Osprey_Rifleman_A","UK3CB_BAF_V_Osprey_Rifleman_B","UK3CB_BAF_V_Osprey_Rifleman_C","UK3CB_BAF_V_Osprey_Rifleman_D","UK3CB_BAF_V_Osprey_Rifleman_E","UK3CB_BAF_V_Osprey_Rifleman_F"] call FNC_AddItemRandom;
+	 	["UK3CB_BAF_B_Bergen_MTP_Rifleman_H_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_H_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_H_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_A","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_B","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C","UK3CB_BAF_B_Bergen_MTP_Rifleman_L_D"] call FNC_AddItemRandom;
+	 	ifak;
+	 	items;
+	 	ammofrag;
+	 	L85;
+	};
