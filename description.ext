@@ -12,10 +12,10 @@ class CfgFunctions {
 	#include "modules\modules.sqf" //DO NOT REMOVE
 
 };
-	
+
 #undef description_functions
 #define description_titles
-	
+
 class rscTitles {
 
 	#include "core\description.hpp" //DO NOT REMOVE
@@ -27,8 +27,8 @@ class rscTitles {
 #define description_params
 
 class Params {
-	
+
 	#include "core\description.hpp" //DO NOT REMOVE
 	#include "modules\modules.sqf" //DO NOT REMOVE
-	
+
 };
