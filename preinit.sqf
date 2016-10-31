@@ -20,7 +20,7 @@ PREP(removeAllVehicleGear);
 PREP(registerModule);
 PREP(checkClassname);
 PREP(makeUnitsList);
-PREP(randInit);
+PREP(randInt);
 PREP(populateArray);
 PREP(chooseRandoms);
 PREP(presenceArray);
