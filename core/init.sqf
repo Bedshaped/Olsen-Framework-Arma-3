@@ -23,10 +23,6 @@ PREP(addTeam);
 PREP(spectateCheck);
 PREP(spectatePrep);
 PREP(countTeam);
-PREP(randInit);
-PREP(populateArray);
-PREP(chooseRandoms);
-PREP(presenceArray);
 
 enableSaving [false, false];
 
