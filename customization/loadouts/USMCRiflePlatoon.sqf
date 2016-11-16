@@ -74,10 +74,11 @@ case (package + "SL"): {
 
 		clothes;
 		["rhsusf_spc_squadleader"] call FNC_AddItem;
-		//["tf_rt1523g_black"] call FNC_AddItem;
+		["tf_rt1523g_black"] call FNC_AddItem;
 		medical;
 		ammofrag;
 		bits;
+		["ItemGPS"] call FNC_AddItem;
 		["ACE_Vector"] call FNC_AddItem;
 		rifle;
 
@@ -156,6 +157,7 @@ case (package + "RTO"): {
 	clothes;
 	["rhsusf_spc_rifleman"] call FNC_AddItem;
 	["tf_rt1523g_black"] call FNC_AddItem;
+	["ACE_Vector"] call FNC_AddItem;
 	bits;
 	medical;
 	ammofrag;
@@ -206,5 +208,87 @@ case (package + "DM"): {
 	["optic_DMS","optic_LRPS","rhsusf_acc_LEUPOLDMK4"] call FNC_AddItemRandom;
 	["rhsusf_acc_SR25S"] call FNC_AddItem;
 	["rhsusf_acc_harris_bipod"] call FNC_AddItem;
+
+};
+
+case (package + "MMG"): {
+
+	clothes;
+	["rhsusf_spc_rifleman"] call FNC_AddItem;
+	["rhsusf_assault_eagleaiii_coy"] call FNC_AddItem;
+	bits;
+	["ACE_Vector"] call FNC_AddItem;
+	medical;
+	["rhs_mag_m67", 2, "vest"] call FNC_AddItem;
+	["SmokeShell", 1, "vest"] call FNC_AddItem;
+	["rhsusf_100Rnd_762x51_m62_tracer", 2, "vest"] call FNC_AddItem;
+	["rhsusf_100Rnd_762x51_m62_tracer", 2, "backpack"] call FNC_AddItem;
+	["rhs_weap_m240G"] call FNC_AddItem;
+};
+
+case (package + "HAT"): {
+
+	clothes;
+	["rhsusf_spc_rifleman"] call FNC_AddItem;
+	["rhsusf_assault_eagleaiii_coy"] call FNC_AddItem;
+	bits;
+	medical;
+	ammofrag;
+	rifle;
+	["rhs_fgm148_magazine_AT", 1, "backpack"] call FNC_AddItem;
+	["rhs_weap_fgm148"] call FNC_AddItem;
+
+};
+
+case (package + "HPilot"): {
+
+	["rhs_uniform_cu_ucp"] call FNC_AddItem;
+	medical;
+	["rhsusf_iotv_ucp"] call FNC_AddItem;
+	["rhs_mag_30Rnd_556x45_M855A1_Stanag", 3, "vest"] call FNC_AddItem;
+	["rhs_mag_an_m8hc", 1, "vest"] call FNC_AddItem;
+	["rhsusf_hgu56p"] call FNC_AddItem;
+	["rhs_ess_black"] call FNC_AddItem;
+
+	["rhs_weap_m4_carryhandle"] call FNC_AddItem;
+
+	bits;
+	["ItemGPS"] call FNC_AddItem;
+
+};
+
+case (package + "JPilot"): {
+
+	["U_B_HeliPilotCoveralls"] call FNC_AddItem;
+	["rhsusf_mag_15Rnd_9x19_FMJ", 2, "uniform"] call FNC_AddItem;
+	["rhs_mag_m18_purple", 1, "uniform"] call FNC_AddItem;
+	["B_Parachute"] call FNC_AddItem;
+	["RHS_jetpilot_usaf"] call FNC_AddItem;
+	["rhs_googles_clear"] call FNC_AddItem;
+	["rhsusf_weap_m9"] call FNC_AddItem;
+	bits;
+	medical;
+	["ItemGPS"] call FNC_AddItem;
+
+};
+
+case (package + "CR"): {
+
+
+	["rhs_uniform_cu_ucp"] call FNC_AddItem;
+	medical;
+	["rhs_mag_30Rnd_556x45_M855A1_Stanag", 1, "uniform"] call FNC_AddItem;
+	["rhs_mag_m18_red", 1, "uniform"] call FNC_AddItem;
+	["rhs_mag_an_m8hc", 1, "uniform"] call FNC_AddItem;
+	["rhsusf_iotv_ucp"] call FNC_AddItem;
+	["rhs_mag_30Rnd_556x45_M855A1_Stanag", 2, "vest"] call FNC_AddItem;
+	["rhsusf_mag_15Rnd_9x19_FMJ", 2, "vest"] call FNC_AddItem;
+	["rhsusf_cvc_green_ess"] call FNC_AddItem;
+	["G_Bandanna_khk"] call FNC_AddItem;
+
+	["rhs_weap_m4_carryhandle"] call FNC_AddItem;
+	["rhsusf_weap_m9"] call FNC_AddItem;
+	["Binocular"] call FNC_AddItem;
+	bits;
 
 };

@@ -20,10 +20,6 @@ PREP(removeAllVehicleGear);
 PREP(registerModule);
 PREP(checkClassname);
 PREP(makeUnitsList);
-PREP(randInt);
-PREP(populateArray);
-PREP(chooseRandoms);
-PREP(presenceArray);
 
 
 FNC_Briefing = compile preprocessFileLineNumbers "customization\briefing.sqf";
@@ -31,9 +27,3 @@ FNC_Briefing = compile preprocessFileLineNumbers "customization\briefing.sqf";
 FNC_Menu = compile preprocessFileLineNumbers "core\menu.sqf";
 
 #include "modules\modules.sqf" //DO NOT REMOVE
-
-if (isServer) then {
-	//Randomizing unit presence variables using FNC_randInt and FNC_presenceArray
-  _players = playersNumber west;
-
-};
