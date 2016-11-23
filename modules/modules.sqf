@@ -10,14 +10,14 @@
 #include "disconnect_control\root.sqf"
 #include "eg_spectator_mode\root.sqf"
 #include "jip\root.sqf"
-#include "start_on_safe\root.sqf"
-#include "start_with_earplugs\root.sqf"
+//#include "start_on_safe\root.sqf"
+//#include "start_with_earplugs\root.sqf"
 
 //Additional modules that can be enabled by removing the //
 //!!Some of them require changing settings in their settings.sqf file!!
 
+//#include "tfr_setup\root.sqf"
 //#include "a3_endscreen\root.sqf"
-//#include "acre_setup\root.sqf"
 //#include "ai_drivers\root.sqf"
 //#include "aiskill\root.sqf"
 //#include "ao_limit\root.sqf"
