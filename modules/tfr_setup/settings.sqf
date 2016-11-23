@@ -2,9 +2,6 @@
 //GENERAL SETTINGS
 ///////////////////////
 
-tf_no_auto_long_range_radio = true; //Disables automatic distribution of backpack radios to group leaders.
-tf_give_personal_radio_to_regular_soldier = false; //Enables distribution of commander radios to squadmates.
-
 /*
 Maximum number of channels is 8 for short range, 9 for long range.
 The frequencies in the array start from 1
@@ -93,14 +90,14 @@ FW_GuerLRFreq = [
 ///////////////////////
 
 
-//SQUAD SPECIFIC RADIO CHANNEL SETTINGS: [GROUP ID, DEFAULT CHANNEL]. By default, channel 0 is for inter-squad communication
+//SQUAD SPECIFIC RADIO CHANNEL SETTINGS: [GROUP ID, DEFAULT CHANNEL].
 //Need to set the GroupID either through the gearscript or by using player setgroupID "id"; in unit init-field.
 FW_radioChannels = [
-	["1'1", 1],
-	["1'2", 2],
-	["1'3", 3],
-	["1'4", 4],
-  ["1'6", 5]
+	["1'1", 0],
+	["1'2", 1],
+	["1'3", 2],
+	["1'4", 3],
+  ["1'6", 4]
 ];
 
 //Alternate SR Channel for Group Leaders

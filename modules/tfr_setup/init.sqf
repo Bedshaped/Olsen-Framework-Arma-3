@@ -2,39 +2,42 @@
 
 #include "settings.sqf"
 
+call compile preprocessFileLineNumbers "\task_force_radio\functions\common.sqf";
+
+//Set Western SR Frequencies
+_settingsSwWest = false call TFAR_fnc_generateSwSettings;
+_settingsSwWest set [2, FW_WestSRFreq];
+tf_freq_west = _settingsSwWest;
+
+//Set Western LR Frequencies
+_settingsLrWest = false call TFAR_fnc_generateLrSettings;
+_settingsLrWest set [2, FW_WestLRFreq];
+tf_freq_west_lr = _settingsLrWest;
+
+//Set Eastern SR Frequencies
+_settingsSwEast = false call TFAR_fnc_generateSwSettings;
+_settingsSwEast set [2, FW_EastSRFreq];
+tf_freq_east = _settingsSwEast;
+
+//Set Eastern LR Frequencies
+_settingsLrEast = false call TFAR_fnc_generateLrSettings;
+_settingsLrEast set [2, FW_EastLRFreq];
+tf_freq_east_lr = _settingsLrEast;
+
+//Set Independent SR Frequencies
+_settingsSwGuer = false call TFAR_fnc_generateSwSettings;
+_settingsSwGuer set [2, FW_GuerSRFreq];
+tf_freq_Guer = _settingsSwGuer;
+
+//Set Independent LR Frequencies
+_settingsLrGuer = false call TFAR_fnc_generateLrSettings;
+_settingsLrGuer set [2, FW_GuerLRFreq];
+tf_freq_Guer_lr = _settingsLrGuer;
+
 FW_playerRadioSetup = {
+
 	call compile preprocessFileLineNumbers "\task_force_radio\functions\common.sqf";
 	WaitUntil {sleep 0.1; count (player call TFAR_fnc_radiosList) > 0};
-
-  //Set Western SR Frequencies
-  _settingsSwWest = false call TFAR_fnc_generateSwSettings;
-  _settingsSwWest set [2, FW_WestSRFreq];
-  tf_freq_west = _settingsSwWest;
-
-  //Set Western LR Frequencies
-  _settingsLrWest = false call TFAR_fnc_generateLrSettings;
-  _settingsLrWest set [2, FW_WestLRFreq];
-  tf_freq_west_lr = _settingsLrWest;
-
-  //Set Eastern SR Frequencies
-  _settingsSwEast = false call TFAR_fnc_generateSwSettings;
-  _settingsSwEast set [2, FW_EastSRFreq];
-  tf_freq_east = _settingsSwEast;
-
-  //Set Eastern LR Frequencies
-  _settingsLrEast = false call TFAR_fnc_generateLrSettings;
-  _settingsLrEast set [2, FW_EastLRFreq];
-  tf_freq_east_lr = _settingsLrEast;
-
-  //Set Independent SR Frequencies
-  _settingsSwGuer = false call TFAR_fnc_generateSwSettings;
-  _settingsSwGuer set [2, FW_GuerSRFreq];
-  tf_freq_Guer = _settingsSwGuer;
-
-  //Set Independent LR Frequencies
-  _settingsLrGuer = false call TFAR_fnc_generateLrSettings;
-  _settingsLrGuer set [2, FW_GuerLRFreq];
-  tf_freq_Guer_lr = _settingsLrGuer;
 
 	_primaryChannel = false;
 	_secondaryChannel = false;
