@@ -101,4 +101,4 @@ FW_radioChannels = [
 ];
 
 //Alternate SR Channel for Group Leaders
-FW_alternateSRChannel = 8;
+FW_alternateSRChannel = 7;

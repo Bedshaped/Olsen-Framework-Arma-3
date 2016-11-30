@@ -2,6 +2,8 @@
 
 #include "settings.sqf"
 
+FW_tfrFreqSetup = {
+
 call compile preprocessFileLineNumbers "\task_force_radio\functions\common.sqf";
 
 //Set Western SR Frequencies
@@ -34,7 +36,9 @@ _settingsLrGuer = false call TFAR_fnc_generateLrSettings;
 _settingsLrGuer set [2, FW_GuerLRFreq];
 tf_freq_Guer_lr = _settingsLrGuer;
 
-FW_playerRadioSetup = {
+};
+
+FW_tfrRadioSetup = {
 
 	call compile preprocessFileLineNumbers "\task_force_radio\functions\common.sqf";
 	WaitUntil {sleep 0.1; count (player call TFAR_fnc_radiosList) > 0};
@@ -74,6 +78,7 @@ FW_playerRadioSetup = {
 
 if (isClass (configFile >> "CfgPatches" >> "task_force_radio")) then {
 
-  call FW_playerRadioSetup;
+	call FW_tfrFreqSetup;
+  call FW_tfrRadioSetup;
 
 };
