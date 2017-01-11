@@ -44,7 +44,7 @@
 	["rhs_mag_30Rnd_556x45_Mk318_Stanag", 6, "vest"] call FNC_AddItem; \
 	["rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red", 2, "vest"] call FNC_AddItem; \
 	["rhs_mag_m67", 2, "vest"] call FNC_AddItem; \
-	["SmokeShell", 1, "vest"] call FNC_AddItem; \
+	["SmokeShell", 1, "vest"] call FNC_AddItem;
 
 case (package + "SL"): {
 
@@ -84,7 +84,7 @@ case (package + "MD"): {
   ["ACE_morphine", 15, "backpack"] call FNC_AddItem;
   ["ACE_epinephrine", 15, "backpack"] call FNC_AddItem;
   ["ACE_tourniquet", 10, "backpack"] call FNC_AddItem;
-  
+
 };
 
 case (package + "GL"): {
