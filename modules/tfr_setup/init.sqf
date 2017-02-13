@@ -1,3 +1,4 @@
+//Heavily based off work by Carafin/Sniper Party https://github.com/SniperParty/COOP-Script-Pack
 ["TFR setup", "Module for all TFR settings.", "Gibfender"] call FNC_RegisterModule;
 
 #include "settings.sqf"
