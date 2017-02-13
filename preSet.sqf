@@ -1,5 +1,7 @@
 /*
 This script is defined as a pre-init function in description.ext, meaning it runs before the map initialises.
+This work was done by Carafin/Sniper Party https://github.com/SniperParty/COOP-Script-Pack
+
 */
 #include "logic\preInit.sqf"
 
