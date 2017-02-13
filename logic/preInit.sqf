@@ -1,3 +1,5 @@
+//This work was done by Carafin/Sniper Party https://github.com/SniperParty/COOP-Script-Pack
+
 caran_ambientCombat = {
 
 	_soundList = ["A3\Sounds_F\environment\ambient\battlefield\battlefield_explosions1.wss",
