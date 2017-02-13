@@ -1,4 +1,4 @@
-//This work was done by Carafin/Sniper Party https://github.com/SniperParty/COOP-Script-Pack
+//This work was done by Carafin/Sniper Party https://github.com/SniperParty/COOP-Script-Pack and Sauer
 
 caran_ambientCombat = {
 
